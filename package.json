@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/mocha.js",
+    "cover": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlehouhou/Test.git"
+  },
+  "author": "littlehouhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littlehouhou/Test/issues"
+  },
+  "homepage": "https://github.com/littlehouhou/Test#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  }
+}
