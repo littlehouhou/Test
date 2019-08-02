@@ -3,15 +3,11 @@ node_js:
   - "10"
 brancher:
   only:
-    - "dev"
     - "master"
 install:
   - "npm install"
   - "npm install -g codecov"
 script:
- - "npm run coverage"  
- - "node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov"
+ - "npm run coverage" 
+ - "nyc report --reporter=text-lcov > coverage.lcov && codecov" 
  - "codecov"
- cache:
-  directories:
-    - node_modules
